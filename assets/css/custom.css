@@ -1,0 +1,595 @@
+@charset "UTF-8";
+/* Por Bona, 2023° Ano do Senhor. https://github.com/Bonavigo */
+
+* {
+	--cor-tom-escuro: #355414;
+	--cor-tom-padrao: #3F5D1F;
+	--cor-tom-claro: #4A6B26;
+	--cor-tom-claro-2: #557a2c;
+	--cor-divisor: #616161;
+
+	--cor-texto: #FFF;
+}
+
+.height_100vh {
+	height: 100vh;
+}
+
+.bg-tom {
+	background: var(--cor-tom-padrao);
+}
+
+.bg-tom2 {
+	background: var(--cor-tom-escuro);
+}
+
+.bg-tom-claro {
+	background: var(--cor-tom-claro);
+}
+
+.box_logo {
+	padding: 4.5em 0;
+}
+
+.box_logo img {
+	image-rendering: pixelated;
+	height: 117px;
+	width: 117px;
+	margin: 15px 0;
+	display: inline-block;
+}
+
+.texto-sombreado {
+	text-shadow: 2px 2px #000;
+}
+
+.site_body {
+	background: url(https://exercitobrhb.com/images/bg_b.png);
+}
+
+.box_destaque {
+	padding: 2.5em 1.5em;
+}
+
+.card-bope {
+	border: 1px solid var(--cor-tom-padrao);
+	background: var(--cor-tom-padrao);
+	border-radius: 0.375rem;
+}
+
+.card .card-header-bope {
+	background-color: var(--cor-tom-escuro) !important;
+	color: var(--cor-texto) !important;
+}
+
+.card .card-body-bope {
+	background-color: var(--cor-tom-claro) !important;
+	color: var(--cor-texto) !important;
+	border-bottom-left-radius: 0.375rem;
+	border-bottom-right-radius: 0.375rem;
+}
+
+.card_novos_membros {
+	display: block !important;
+	position: relative;
+	padding: 1.25rem;
+	background-image: url(https://exercitobrhb.com/arquivos/2018/08/fundo_ads.jpg);
+	background-color: var(--cor-tom-padrao);
+	background-size: cover;
+	background-position: center;
+	z-index: 3;
+}
+
+.card_novos_membros::after {
+	position: absolute;
+	content: 'NOVOS MEMBROS';
+	bottom: 7%;
+	left: 5%;
+	font-weight: bold;
+	color: var(--cor-texto);
+	z-index: 4;
+}
+
+.card_novos_membros .novo_membro {
+	margin-top: -30px;
+	height: 110px;
+	width: 64px;
+}
+
+.wrapper_aviso_grande {
+	display: none;
+}
+
+.aviso_menor {
+	display: inline-block;
+}
+
+@media(max-width: 767px), (min-width: 991px) {
+	.wrapper_aviso_grande {
+		display: inline-block;
+		float: left;
+	}
+	.aviso_menor {
+		display: none;
+	}
+}
+
+.personagem_avisos {
+	width: 50px;
+	height: 50px;
+	margin-right: 10px;
+	float: left;
+	border-radius: 50%;
+}
+
+.carousel_banner {
+	max-width: 540px;
+	max-height: 250px;
+}
+
+.border-preta {
+	border-color: var(--cor-tom-padrao) !important;
+}
+
+.fonte_aviso {
+	font-size: 12px;
+}
+
+.btn-bluewood, .btn-bluewood:hover, .btn-bluewood:focus {
+	color: var(--cor-texto);
+	background: #2E4757 !important;
+	border-color: #2E4757 !important;
+}
+
+.background_resultado {
+	background: var(--cor-tom-escuro) !important;
+}
+
+.pixelated_rendering {
+	image-rendering: pixelated !important;
+}
+
+@media (max-width: 991px) {
+	.d-flex-pesquisa {
+		display: flex !important;
+	}
+	.margin-pesquisa {
+		margin-bottom: .25rem !important;
+	}
+}
+
+@media (min-width: 1200px) {
+	.d-flex-pesquisa {
+		display: flex !important;
+	}
+}
+
+.bg_badge {
+	background: var(--cor-tom-padrao);
+}
+
+.card-mercado-gratis {
+	background: url(https://exercitobrhb.com/arquivos/2023/02/top_barraca.png) repeat-x, url(https://exercitobrhb.com/arquivos/2023/02/bg_barraca.png) no-repeat, #2E2E2E;
+	padding: 4rem 1.5rem 1.5rem 1.5rem;
+	color: var(--cor-texto);
+}
+
+.mercado-gratis-emblema {
+	height: 60px;
+	width: 60px;
+	border-radius: 10px;
+	cursor: pointer;
+}
+
+@media (max-width: 576px) {
+	.d-xsm-flex {
+		display: flex !important;
+	}
+}
+
+.btn_verde_oliva, .btn_verde_oliva:hover, .btn_verde_oliva:focus {
+	color: var(--cor-texto);
+	background: var(--cor-tom-escuro) !important;
+	border-color: var(--cor-tom-escuro) !important;
+}
+
+.bg-inherit {
+	background: inherit;
+}
+
+.card_ts {
+	background: url(https://exercitobrhb.com/images/site/capaTS.png) right no-repeat, #091621;
+}
+
+.text_muted_dh {
+	color: #B1B7BC;
+}
+
+.oficais_corpo_de_oficais {
+	margin: -10px -10px -50px -10px;
+}
+
+.brasao {
+	width: 80px;
+	margin-bottom: -10px;
+}
+
+.bg_fundo_infos {
+	background-image: linear-gradient(to bottom, rgba(43, 63, 30, 0.7), rgba(43, 63, 30, 0.7)), url("https://exercitobrhb.com/arquivos/2023/04/panorama.jpeg");
+	background-size: cover;
+}
+
+.bg_fundo_estatisticas {
+	background-image: linear-gradient(to bottom, rgba(43, 63, 30, 0.7), rgba(43, 63, 30, 0.7));
+	background-size: cover;
+}
+
+.box_ad {
+	background: url(https://exercitobrhb.com/arquivos/2017/12/publicity.png) center no-repeat, rgb(52, 101, 153);
+	min-height: 6.5em;
+	height: auto;
+}
+
+.div_radio {
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	margin: 0 15px 15px 0;
+	z-index: 800
+}
+
+.wrapper_radio {
+	border-radius: 3px;
+	width: 269px;
+	height: 60px;
+	background: url(https://exercitobrhb.com/arquivos/2018/05/fundoplayer_2018_exbr.png) no-repeat, #558B2F
+}
+
+.upper_radio {
+	text-align: right;
+	margin-bottom: 5px
+}
+
+.buttons_radio {
+	background: #B3BDB1;
+	border-radius: 10px;
+	color: #5A6558;
+	font-size: 11px;
+	padding: 2px 6px;
+	display: inline-block
+}
+
+.buttons_radio:hover,
+.buttons_radio:active {
+	color: #03A63F
+}
+
+.controles {
+	position: absolute;
+	float: left;
+	margin-left: 100px
+}
+
+.marquee_wrapper {
+	width: 165px;
+	height: 19px
+}
+
+.marquee {
+	font-size: 12px;
+	color: var(--cor-texto);
+}
+
+.wrapper_btn_controles {
+	height: 41px;
+}
+
+.button_controle {
+	margin: 4px 0 !important;
+	height: 80% !important;
+	min-width: 30px !important;
+	border-radius: 3px !important;
+	background: #FFF !important;
+	border: none;
+	outline: 0;
+	cursor: pointer;
+	vertical-align: initial !important
+}
+
+.button_controle:active {
+	background: #F1F4EE !important;
+}
+
+.button_controle i {
+	font-size: 12px;
+}
+
+#player_audio {
+	display: none;
+}
+
+.minh-50 {
+	min-height: 50%;
+}
+
+.apostila-peles-divisor {
+	background: var(--cor-divisor);
+	text-transform: uppercase;
+	font-weight: 700;
+	margin: 1em 0 1em 0;
+	padding: 1em 0 1em 0;
+}
+
+.list-group-noticias, .list-group-bope {
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+}
+
+.list-group-noticias a, .list-group-bope a {
+	background-color: var(--cor-tom-claro);
+	border: var(--cor-tom-padrao);
+	color: var(--cor-texto);
+}
+
+.list-group-noticias a:hover, .list-group-bope a:hover {
+	background-color: var(--cor-tom-claro-2);
+	border: var(--cor-tom-padrao);
+	color: var(--cor-texto);
+}
+
+.list-group-noticias a:active, .list-group-bope a:active {
+	background-color: var(--cor-tom-claro-2);
+	border: var(--cor-tom-padrao);
+	color: var(--cor-texto);
+}
+
+.list-group-noticias a:focus, .list-group-bope a:focus {
+	background-color: var(--cor-tom-claro-2);
+	border: var(--cor-tom-padrao);
+	color: var(--cor-texto);
+}
+
+.icon-noticia {
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+}
+
+.icon-lista-generica {
+	width: 48px;
+	height: 51px;
+	background: url(https://1.bp.blogspot.com/-KNfZH2uRYKQ/XK0oYpacyqI/AAAAAAABOsg/JvXUkVqmuU8eHE0eOZtjVosY2PiIEqGKQCKgBGAs/s1600/Image%2B524.png) center no-repeat;
+}
+
+.icon-lista-exclusividades {
+	height: 39px;
+	width: 39px;
+}
+
+.emblema-ultimos-emblemas {
+	display: inline-block;
+	padding: 5px;
+	margin: 2px;
+	border-radius: 5px;
+	background-color: var(--cor-tom-padrao);
+	border: 2px var(--cor-tom-escuro);
+	border-style: double;
+}
+
+.emblema-ultimos-emblemas > img {
+	height: 40px;
+	width: 40px;
+}
+
+.caixa-destaque {
+	image-rendering: pixelated;
+	background: linear-gradient(to bottom,rgba(15, 101, 30, 0.48) 0,#355414 100%), url(https://exercitobrhb.com/images/site/podestaque.png);
+}
+
+.membro-destaque {
+	height: 174px;
+	width: 80px;
+}
+
+.texto-destaque {
+	color: var(--cor-texto);
+	text-decoration: none;
+	text-align: center;
+}
+
+.novo-membro {
+	height: 92px;
+	width: 40px;
+	display: inline-block;
+	margin: 0 0.5em 0 0.5em;
+}
+
+.avatar-perfil {
+	height: 174px;
+	width: 80px;
+}
+
+.header-caixas-perfil {
+	padding: 1rem;
+	text-align: center;
+}
+
+.body-caixas-perfil {
+	background: var(--cor-tom-padrao);
+	padding: 1rem;
+	border-bottom-left-radius: 0.5rem;
+	border-bottom-right-radius: 0.5rem;
+	text-align: center;
+	overflow: overlay;
+}
+
+.caixa-emblemas {
+	height: 200px;
+}
+
+.caixa-grande-perfil {
+	height: 440px;
+}
+
+@media (min-width: 768px) {
+	.caixa-grande-perfil {
+		height: 678px;
+	}
+}
+
+@media (min-width: 1024px) {
+	.caixa-grande-perfil {
+		height: 630px;
+	}
+}
+
+@media (min-width: 1440px) {
+	.caixa-grande-perfil {
+		height: 440px;
+	}
+}
+
+.body-caixas-perfil::-webkit-scrollbar {
+	width: 3px;
+}
+
+.body-caixas-perfil::-webkit-scrollbar-track {
+	box-shadow: inset 0 0 5px #FFF;
+	border-radius: 10px;
+	background: var(--cor-tom-escuro);
+}
+
+.body-caixas-perfil::-webkit-scrollbar-thumb {
+	background: var(--cor-tom-claro);
+	border-radius: 10px;
+}
+
+.body-caixas-perfil::-webkit-scrollbar-thumb:hover {
+	background: var(--cor-tom-padrao);
+}
+
+.perfil-emblema-raro {
+	background: linear-gradient(to bottom, rgb(253, 220, 133) 0%,#efb51c 100%);
+	border-radius: 5px;
+	border: 2px #bb7608;
+	border-style: double;
+	padding: 3px;
+	margin: 2px;
+}
+
+.perfil-emblema {
+	margin: 5px;
+}
+
+@media (min-width: 600px) {
+	.caixa-direita {
+		margin-left: 0.25rem;
+	}
+}
+
+.perfil-honraria {
+	width: 70px;
+	height: auto;
+}
+
+.perfil-emblema-honraria {
+	width: 70px;
+	height: auto;
+}
+
+.perfil-medalha {
+	width: 40px;
+	height: auto;
+}
+
+.perfil-medalha-emblema {
+	width: 14px;
+	height: auto;
+}
+
+.ex-comandante-quadro {
+	background: url(https://exercitobrhb.com/arquivos/fundo-comandantes.png);
+	width: 175px;
+	height: 188px;
+	margin: 0 1em;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.ex-comandante-quadro img {
+	height: 110px;
+	width: 64px;
+	opacity: 0.7;
+	margin-top: 1.5em;
+}
+
+.ex-comandante-quadro p {
+	margin: 1.8em;
+	font-size: 0.85rem;
+}
+
+.caixa-titulo {
+	min-height: 100px;
+}
+
+.caixa-medalha-pagina-medalhas {
+	background: var(--cor-tom-padrao);
+	padding: 1rem;
+	border-radius: 0.5rem;
+	margin: 0.75em 0.25em 0.75em 0.25em;
+}
+
+.imagem-medalha-pagina-medalhas {
+	width: 130px;
+}
+
+.bg-pag-patrocinadores-1 {
+	background: #558b2f;
+}
+
+.bg-pag-patrocinadores-2 {
+	background: #477924;
+}
+
+.bolinha-pag-patrocinadores {
+	background: #f5961a;
+	border-radius:50%;
+	border: 10px solid #fdd04e;
+	padding: 10px;
+	width:8em;
+	height:8em;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.img-honraria-pesquisa {
+	width: 35px;
+	height: 35px;
+}
+
+.modal-exbr .modal-content {
+	color: #FFF !important;
+}
+
+.modal-exbr h1 {
+	color: #FFF !important;
+}
+
+.modal-exbr .modal-header {
+	background-color: var(--cor-tom-escuro);
+	border-bottom: 0;
+	color: #FFF !important;
+}
+
+.modal-exbr .modal-body {
+	background-color: var(--cor-tom-claro-2);
+	color: #FFF !important;
+}
+
+.modal-exbr .modal-footer {
+	background-color: var(--cor-tom-escuro);
+	border-top: 0;
+	color: #FFF !important;
+}
